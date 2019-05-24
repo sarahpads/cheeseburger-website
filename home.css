@@ -1,0 +1,198 @@
+/* CAROUSEL */
+
+.carousel {
+  margin-bottom: var(--content-margin);
+}
+
+.carousel__item {
+  height: var(--carousel-height);
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel__image {
+  height: var(--carousel-height);
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.carousel__image:after {
+  background: linear-gradient(transparent, 35%,rgba(0,0,0,0.7));
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.carousel__info {
+  align-items: flex-start;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: calc(var(--carousel-height) - 5rem);
+  position: relative;
+  margin: auto;
+  max-width: 100%;
+  padding: 0 var(--content-padding);
+  width: var(--content-width);
+}
+
+.carousel__title {
+  font-size: 4rem;
+  margin-top: auto;
+  margin-right: 9rem;
+}
+
+.carousel__button {
+  background-color: var(--accent-1);
+  color: #fff;
+}
+
+/* TINY SCROLL OVERRIDES */
+
+.tns-outer {
+  position: relative;
+}
+
+.tns-controls button {
+  background: transparent;
+  border: none;
+  height: var(--carousel-height);
+  position: absolute;
+  top: 0;
+  width: 10rem;
+}
+
+.tns-controls button:after {
+  --border: 4px solid  rgba(255, 255, 255, 0.5);
+  border-right: var(--border);
+  border-bottom: var(--border);
+  content: '';
+  display: block;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+}
+
+.tns-controls button:last-of-type {
+  right: 0;
+}
+
+.tns-controls button:first-of-type:after {
+  left: 3rem;
+  transform: rotate(-225deg);
+}
+
+.tns-controls button:last-of-type:after {
+  right: 3rem;
+  transform: rotate(-45deg);
+}
+
+.tns-nav {
+  bottom: 0;
+  padding-bottom: 2rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.tns-nav button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  height: 1rem;
+  margin: 0.3rem;
+  padding: 0;
+  width: 1rem;
+
+}
+
+.tns-nav button.tns-nav-active {
+  background-color: #fff;
+}
+
+/* SPOTLIGHT */
+
+.spotlight {
+  display: flex;
+  margin: auto;
+  max-width: 100%;
+  width: var(--content-width);
+}
+
+.spotlight__item {
+  align-items: center;
+  display: flex;
+  flex-basis: 33%;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+
+.spotlight__image {
+  --dimension: 14rem;
+  border-radius: 50%;
+  height: var(--dimension);
+  overflow: hidden;
+  width: var(--dimension);
+}
+
+.spotlight__description {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+/* FEATURE */
+
+.feature {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 100%;
+  padding: 0 var(--content-padding);
+  width: var(--content-width);
+}
+
+.feature:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+.feature:nth-of-type(even) .feature__info {
+  margin-left: 2rem;
+}
+
+.feature:nth-of-type(odd) .feature__info {
+  margin-right: 2rem;
+}
+
+.feature__info {
+  flex: 1;
+}
+
+.feature__title {
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1em;
+  margin-top: 8rem;
+}
+
+.feature__description {
+  margin: 0.8rem 0;
+}
+
+.feature__image {
+  --dimension: 40rem;
+  height: var(--dimension);
+  overflow: hidden;
+  width: var(--dimension);
+}
+
+.carousel__image img,
+.spotlight__image img,
+.feature__image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}

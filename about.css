@@ -1,0 +1,38 @@
+.about {
+  display: flex;
+  margin: var(--content-margin) auto;
+  width: var(--content-width);
+}
+
+.about__image {
+  --dimension: 26rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+  height: var(--dimension);
+  overflow: hidden;
+  width: var(--dimension);
+}
+
+.about__image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.about__info {
+  margin-left: 6rem;
+}
+
+.about__title {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.about__bio {
+  margin: 2rem 0;
+}
+
+.about__sm a:nth-child(2) {
+  margin: 0 2rem;
+}

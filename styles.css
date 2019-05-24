@@ -1,0 +1,209 @@
+/* CHEATSHEET
+  background-color: #ffffff;    // changes the background color
+  color: #fffff;                // changes the font color
+  border: 1px solid #fff;       // adds a border with the specified width, style, and color
+  font-weight: 300;             // how 'bold' you want the text to be
+  margin: 2rem;                 // puts space between an element and its siblings
+  padding: 3rem;                // puts space between an element and its children
+  text-align: left;             // aligns the inline elements within the parent
+*/
+
+
+/* TODO 3: play around with these variables to customize your theme */
+:root {
+  --nav-height: 5.8rem;
+  --content-width: 110rem;
+  --content-margin: 8rem;
+  --content-padding: 5rem;
+  --carousel-height: 47rem;
+  --neutral-1: #fff;
+  --neutral-2: #5a5a5a;
+  --neutral-3: #c0bfc0;
+  --accent-1: #777677;
+  --accent-2: #232323;
+
+  --primary-bg: var(--neutral-1);
+  --secondary-bg: var(--neutral-3);
+
+  --nav-bg: var(--secondary-bg);
+  --content-bg: var(--primary-bg);
+  --footer-bg: var(--secondary-bg);
+
+  --text-default: var(--neutral-2);
+  --button-color: var(--accent-1);
+  --link-color: var(--accent-2);
+}
+
+html,
+body {
+  min-height: 100%;
+  min-width: 768px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--body-bg);
+  color: var(--text-default);
+  font-family: Roboto, "Helvetica Neue", Arial, "sans-serif";
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.5em;
+  margin: 0;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1em;
+  margin-bottom: 0;
+}
+
+img {
+  position: relative;
+}
+
+img:after {
+  align-items: center;
+  background-color: #f2f2f2;
+  color: var(--neutral-2);
+  content: '\f1e4';
+  display: flex;
+  font-family: 'FontAwesome';
+  font-size: 4rem;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+p, span, a {
+  line-height: 1.5em;
+  margin-top: 0;
+}
+
+main {
+  padding-top: var(--nav-height);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(0,0,0,.1);
+  margin: var(--content-margin) auto;
+  max-width: 100%;
+  width: calc(var(--content-width) - (var(--content-padding) * 2));
+}
+
+button {
+  border: 2px solid var(--button-color);
+  border-radius: 4px;
+  color: var(--button-color);
+  cursor: pointer;
+  font-size: 1.6rem;
+  line-height: 2em;
+  padding: 0 1em;
+  transition: all .25s;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: var(--button-color);
+  color: var(--neutral-1);
+}
+
+a {
+  color: var(--link-color);
+  font-weight: 400;
+}
+
+/* NAVIGATION */
+
+.navbar {
+  align-items: center;
+  background-color: var(--nav-bg);
+  display: flex;
+  padding: 1rem;
+  position: fixed;
+  height: var(--nav-height);
+  width: 100%;
+  z-index: 5;
+}
+
+.navbar__list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__item {
+  padding: 0 1rem;
+}
+
+.navbar__item.-active .navbar__link {
+  color: #fff;
+}
+
+.navbar__link {
+  color: rgba(255,255,255,.5);
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.navbar__logo {
+  height: 100%;
+  margin-left: auto;
+  width: 4rem;
+}
+
+.navbar__logo:after {
+  font-size: 2rem;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--footer-bg);
+  color: #fff;
+  margin-top: var(--content-margin);
+  padding: 6rem 0;
+}
+
+.footer__content {
+  margin: auto;
+  padding: 0 var(--content-padding);
+  max-width: 100%;
+  width: var(--content-width);
+}
+
+.footer__form {
+  display: flex;
+  width: 45rem;
+}
+
+.footer__input {
+  flex: 1;
+  font-size: 1.6rem;
+  padding: 0.5rem 1rem;
+}
+
+.footer__input {
+  border: none;
+  border-radius: 4px;
+}
+
+.footer__button {
+  background-color: var(--accent-1);
+  color: #fff;
+  margin-left: 1rem;
+}

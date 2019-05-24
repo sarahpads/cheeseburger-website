@@ -1,0 +1,152 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- TODO 1: fill out information about your site -->
+    <meta name="description" content="A pretty sweet website">
+    <meta name="author" content="Dude Rock">
+    <title>Cheeseburger Webpage</title>
+
+    <!-- Slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css">
+
+    <!-- Webfont -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+
+    <!-- Styles -->
+    <link href="styles.css" rel="stylesheet">
+    <link href="home.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <!-- TODO 4: Create a new page and add it to your navigation -->
+        <ul class="navbar__list">
+          <li class="navbar__item -active">
+            <a class="navbar__link" href="./index.html">Home</a>
+          </li>
+
+          <li class="navbar__item">
+            <a class="navbar__link" href="./about.html">About</a>
+          </li>
+        </ul>
+
+        <img class="navbar__logo" src="assets/redspace.svg" />
+      </nav>
+    </header>
+
+    <!--
+      TODO 2: fill out your content
+      - replace all of the images
+      - include your own content
+      - add/remove elements to suit your content
+    -->
+    <main>
+      <div class="carousel">
+        <div class="carousel__track">
+          <div class="carousel__item">
+            <div class="carousel__image">
+              <img src=""/>
+            </div>
+
+            <div class="carousel__info">
+              <h2 class="carousel__title">Cheeseburgers make your knees weak and your soul tingle</h2>
+              <p class="carousel__description">Let us wax poetic about the beauty of the cheeseburger. The flavour gracefully dances across your palate like a majestic figure skater on ice. There’s cheesy incarnation waiting for you no matter what your palate preferences are.</p>
+              <button class="carousel__button">Learn More</button>
+            </div>
+          </div>
+
+          <div class="carousel__item">
+            <div class="carousel__image">
+              <img src=""/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="spotlight">
+        <div class="spotlight__item">
+          <div class="spotlight__image">
+            <img src=""/>
+          </div>
+
+          <p class="spotlight__description">
+            The palatable sensation we lovingly refer to as The Cheeseburger has a distinguished and illustrious history. It was born from humble roots, only to rise to well-seasoned greatness.
+          </p>
+          <button class="spotlight__button">Button</button>
+        </div>
+
+        <div class="spotlight__item">
+          <div class="spotlight__image">
+            <img src=""/>
+          </div>
+
+          <p class="spotlight__description">
+            Whether you’re a ketchup and mustard loyalist or you prefer house sauce to no sauce, you can agree that every cheeseburger has it’s own special flair. Top tip: house sauce begs to be ordered on the side for fry-dipping purposes.
+          </p>
+          <button class="spotlight__button">Button</button>
+        </div>
+
+        <div class="spotlight__item">
+          <div class="spotlight__image">
+            <img src=""/>
+          </div>
+
+          <p class="spotlight__description">
+            The cheese melts on the burger and in your mouth, perfectly complementing the medium-rare beef. Any burger lover worth their salt knows the best patty is comprised of ground chuck and brisket.
+          </p>
+          <button class="spotlight__button">Button</button>
+        </div>
+      </div>
+
+      <hr class="feature__divider"/>
+
+      <div class="feature">
+        <div class="feature__info">
+          <h2 class="feature__title">A cheeseburger is more than just a sandwich</h2>
+          <p class="feature__description">The last time you had a cheeseburger was too long ago. Try not to drool when you think about the slightly charred, medium-rare meat nestled between soft brioche, cradled in crisp iceberg lettuce and flavour amplifying condiments. Why are you still reading this- go get a cheeseburger.</p>
+          <a class="feature__link">Link Here</a>
+        </div>
+
+        <div class="feature__image">
+          <img src=""/>
+        </div>
+      </div>
+
+      <hr class="feature__divider"/>
+
+      <div class="feature">
+        <div class="feature__info">
+          <h2 class="feature__title">Salad is essentially food for rabbits, so don’t bother wasting your time</h2>
+          <p class="feature__description">Epic cheeseburgers come in all kinds of manifestations, but we want them in and around our mouth no matter what. Slide those smashed patties with the gently caramelized meat fat between a toasted brioche bun and pass it over. You fall in love with the cheeseburger itself but the journey ain’t half bad either.</p>
+        </div>
+
+        <div class="feature__image">
+          <img src=""/>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer__content">
+          <h2 class="footer__title">Subscribe</h2>
+          <p class="footer__description">
+            Cheeseburgers are never going to give you up or let you down. They’ll also never run around or desert you.
+            They’ll never make you cry, unless it’s from sheer joy. Cheeseburgers certainly won’t say goodbye either.
+            Finally, cheeseburgers are incapable of telling lies or hurting you. On the flip side, they can still Rick Roll you.</p>
+          <form id="subscribe-form" class="footer__form">
+            <input id="email-input" class="footer__input" placeholder="Enter email here" type="text"/>
+            <button class="footer__button" type="submit">Submit</button>
+          </form>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
+    <script src="./script.js"></script>
+    <script src="./home.js"></script>
+  </body>
+</html>
