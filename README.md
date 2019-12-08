@@ -1,5 +1,4 @@
 # cheeseburger-website
-Created with StackBlitz ⚡️
 
 A simple HTML/CSS/JS template for use in classrooms. A number of TODO comments are scattered throughout to provide guidance to students as they experiment. 
 
